@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions! (Two)</title>
+</head>
+<body>
+	<script>
+
+		// Given two sides of a triangle (t1_a, t1_b) we compute the third (t1_c).
+		// The code below is repetitive. Write a function, "triangle", which takes in two sides of
+		// a triangle and returns the third using the equation repeated below.
+
+		// Then, convert the code below to use the new "triangle" function instead of repeating the
+		// equation three times.
+function pathag(a,b) {
+			return Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+		}
+
+		var t1_a = 3;
+		var t1_b = 4;
+		var t1_c = pathag(t1_a, t1_b);
+
+		console.log(t1_a, t1_b, t1_c);
+
+		var t2_a = 5;
+		var t2_b = 18;
+		var t2_c = pathag(t2_a, t2_b);
+
+		console.log(t2_a, t2_b, t2_c);
+
+		var t3_a = 9;
+		var t3_b = 12;
+		var t3_c = pathag(t3_a,t3_b);
+
+		console.log(t3_a, t3_b, t3_c);
+
+		
+
+		console.log(pathag(3,4));
+		console.log(pathag(5,18));
+		console.log(pathag(9,12));
+
+	</script>
+</body>
+</html>
